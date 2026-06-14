@@ -18,7 +18,12 @@ def create_app(config_name='default'):
     app = Flask(__name__)
     app.config.from_object(config[config_name])
 
-    CORS(app, origins=[app.config['FRONTEND_URL'], 'http://localhost:3000'], supports_credentials=True)
+    CORS(app, origins=[
+        app.config['FRONTEND_URL'],
+        'http://localhost:3000',
+        'https://job-application-tracker-alpha-blond.vercel.app',
+        'https://*.vercel.app',
+    ], supports_credentials=True)
     bcrypt.init_app(app)
     jwt.init_app(app)
     limiter.init_app(app)
