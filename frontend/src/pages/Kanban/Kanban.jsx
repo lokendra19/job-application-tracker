@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { applicationsAPI } from '../../services/api';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
-import StatusBadge from '../../components/UI/StatusBadge';
+
 import { STATUS_COLORS, STATUSES } from '../../utils/statusColors';
 import { PageLoader } from '../../components/UI/LoadingSpinner';
 import { ExternalLink, Building2 } from 'lucide-react';

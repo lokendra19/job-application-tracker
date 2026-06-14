@@ -1,11 +1,11 @@
 import { useEffect, useState, useCallback } from 'react';
 import { applicationsAPI } from '../../services/api';
-import { Plus, Search, Filter, Download, Upload, Pencil, Trash2, ExternalLink, SortAsc } from 'lucide-react';
+import { Plus, Search, Download, Upload, Pencil, Trash2, ExternalLink } from 'lucide-react';
 import toast from 'react-hot-toast';
 import Modal from '../../components/UI/Modal';
 import StatusBadge from '../../components/UI/StatusBadge';
 import ApplicationForm from './ApplicationForm';
-import { STATUSES, JOB_TYPES } from '../../utils/statusColors';
+import { STATUSES } from '../../utils/statusColors';
 import { PageLoader } from '../../components/UI/LoadingSpinner';
 
 export default function Applications() {

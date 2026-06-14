@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { aiAPI } from '../../services/api';
-import { MessageSquare, ChevronDown, ChevronUp, Brain } from 'lucide-react';
+import { ChevronDown, ChevronUp, Brain } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const CATEGORIES = [

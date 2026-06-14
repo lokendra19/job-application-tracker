@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { interviewsAPI } from '../../services/api';
-import { Plus, Trash2, Pencil, Calendar, Clock, Video, MapPin } from 'lucide-react';
+import { Plus, Trash2, Pencil, Calendar, Clock, Video } from 'lucide-react';
 import toast from 'react-hot-toast';
 import Modal from '../../components/UI/Modal';
 import { PageLoader } from '../../components/UI/LoadingSpinner';

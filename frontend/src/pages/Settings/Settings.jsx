@@ -50,7 +50,7 @@ export default function Settings() {
           </div>
           <div>
             <label className="label">Email</label>
-            <input className="input" value={user?.email || ''} disabled className="input opacity-60 cursor-not-allowed" />
+            <input className="input opacity-60 cursor-not-allowed" value={user?.email || ''} disabled />
             <p className="text-xs text-gray-400 mt-1">Email cannot be changed</p>
           </div>
           <button type="submit" disabled={savingProfile} className="btn-primary flex items-center gap-2">
